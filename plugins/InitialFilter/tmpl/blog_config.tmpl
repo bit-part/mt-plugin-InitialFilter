@@ -1,0 +1,20 @@
+<mtapp:setting
+    id="filter_key"
+    label="<__trans phrase="Settings">"
+    hint="<__trans phrase="Hint">">
+    <textarea type="text" name="filter_key" id="filter_key" class="text full high"><mt:var name="filter_key" escape="html"></textarea>
+<pre>
+<__trans phrase='Set with YAML format'>
+
+[<__trans phrase='Setting information'>]
+<__trans phrase='The value of "_type" parameter'>: 
+    id: <__trans phrase='Filter ID'>
+    force: <__trans phrase='Set 1 if you always wont to set the initial filter'>
+
+[<__trans phrase='Setting Sample'>]
+# <__trans phrase='If the URL is "mt.cgi?__mode=list&_type=entry&blog_id=2"'>
+entry: 
+    id: 1
+    force: 1
+</pre>
+</mtapp:setting>

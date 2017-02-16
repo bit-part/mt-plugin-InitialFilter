@@ -1,0 +1,14 @@
+id: InitialFilter
+name: InitialFilter
+version: 1.0.0
+description: <__trans phrase='Set an initial filter to a list page built Listing Framework.'>
+plugin_link: https://github.com/bit-part/mt-plugin-InitialFilter/
+author_name: <__trans phrase='bit part LLC'>
+author_link: http://bit-part.net/
+l10n_class: InitialFilter::L10N
+blog_config_template: blog_config.tmpl
+settings:
+    filter_key:
+        default:
+callbacks:
+    MT::App::CMS::pre_run: $InitialFilter::InitialFilter::Plugin::hdlr_pre_run
